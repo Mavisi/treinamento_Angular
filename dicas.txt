@@ -1,0 +1,6 @@
+npm run start - para iniciar a nossa aplicação 
+ctrl + c - para interromper o cli do angular, e conseguir usar a linha de comando novamente
+
+ng generate component home- para criar uma pasta chamada home
+ng generate component components/home - para criar uma pasta chamada components e dentro dela criar uma outra pasta
+chamada home

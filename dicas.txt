@@ -4,3 +4,5 @@ ctrl + c - para interromper o cli do angular, e conseguir usar a linha de comand
 ng generate component home- para criar uma pasta chamada home
 ng generate component components/home - para criar uma pasta chamada components e dentro dela criar uma outra pasta
 chamada home
+
+procurar: html event angular

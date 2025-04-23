@@ -1,10 +1,10 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { EnviaFormularioService } from '../../service/envia-formulario.service';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterOutlet, HomeComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -15,7 +15,9 @@ export class HomeComponent {
   deveMostrarTitulo= true;
   listItems = ["asda", "dois ", "tres"];
 
-  @Input() minhaPropsDeFora!: string;
+  @Input("name") minhaPropsDeFora!: string;
+
+  @Output() emitindoValorName =  new EventEmitter<string>();
   
   //foi so um exemplo
 // meuBooleano = "Marcos";
@@ -24,6 +26,7 @@ export class HomeComponent {
 //   }
 
 submit() {
+  this.emitindoValorName.emit(this.name);
   this.enviaFormularioService.enviarFormulario("oi");
 }
 }

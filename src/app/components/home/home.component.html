@@ -1,19 +1,7 @@
-<p>Salve, ta funcionando! {{name}}</p>
+<h1>
 
+   {{minhaPropsDeFora}}
 
-<button (click)="submit()" > Clique aqui</button> 
+</h1>
 
-@if(deveMostrarTitulo){
-    <h1> Meu titulo</h1>
-
-}@else if(name=='Marcos'){
-    <h1> Meu nome é Marcos</h1>
-}@else {
-    <h1> Não foi verdadeiro</h1>
-}
-
-@for(item  of listItems; track item){
-    <p>{{item}}</p>
-}
-<!-- <button [attr.aria-label]="idButton">Clique aqui</button> -->
-<!-- <button [id]="idButton">Clique aqui</button>  -->
+<button (click)="submit()">clique </button>
